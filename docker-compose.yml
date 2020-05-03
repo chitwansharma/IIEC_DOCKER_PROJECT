@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  joomladb:
+    image: mysql:5.6
+    volumes:
+      - mysql_storage_new:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_USER: chitwan
+      MYSQL_PASSWORD: redhat
+      MYSQL_DATABASE: mydata
+
+  joomlaos:
+    image: joomla:3.9-php7.2-apache
+    restart: always
+    depends_on:
+       - joomladb
+    ports:
+      - 80:80
+    environment:
+      JOOMLA_DB_HOST: joomladb:3306
+      JOOMLA_DB_USER: chitwan
+      JOOMLA_DB_PASSWORD: redhat
+      JOOMLA_DB_NAME: mydata
+    volumes:
+      - jm_storage_new:/var/www/html
+
+volumes:
+   mysql_storage_new:
+   jm_storage_new:
+
