@@ -9,7 +9,7 @@ here is my project using docker to set up a webapp Jhoomla.
 # 3. Download reqiured images -- 
 *mysql image*
                                *jhoomla image*(by apply pull command)
-# 4. Setting up mysql -- 
+# 4. Setting Up mysql -- 
 use command --- docker run -it -e MYSQL_ROOT_PASSWORD=(any password you like) -e MYSQL_USER=(any user name) -e MYSQL_PASSWORD=(any password(recommended not to use root password) -e MYSQL_DATABASE=(any database name) --name joomladb mysql:5.6
                    --- then use command -- yum install mysql
 # 5. Docker compose
@@ -19,7 +19,7 @@ use command --- docker run -it -e MYSQL_ROOT_PASSWORD=(any password you like) -e
    	#docker compose up
 	use command docker -compose up to complete the setup
 	# jhoomla started
-# 6. open google and type -
+# 6. Open Google and type -
 	 -localhist:80 
 	   then the jhoomla webapp opens
 	# Docker container start stop
