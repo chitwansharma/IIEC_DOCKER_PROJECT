@@ -29,5 +29,4 @@ use command --- docker run -it -e MYSQL_ROOT_PASSWORD=(any password you like) -e
 	 you can easily stop the container using command --docker compose dow
 	 
 I learnt this technology on youtube by vimal daga sir and it is free of cst under IIEC RISE.
-	
-#THANK YOU
+# THANK YOU
