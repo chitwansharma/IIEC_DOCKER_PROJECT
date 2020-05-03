@@ -1,5 +1,5 @@
 # IIEC_DOCKER_PROJECT
-Under iiec rise1.0 compaign. I completed my training of DOCKER under the guidance of VIMAL DAGA SIR. 
+Under iiec rise1.0 compaign. I completed my training of DOCKER under the guidance of Vimal Daga Sir. 
 here is my project using docker to set up a webapp Jhoomla.
 # The setup of project is explained below.
  In redhat enterprise linux install the docker software.
